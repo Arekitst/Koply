@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "SF Pro Rounded bold";
+  src: url("../assets/sf-pro-rounded-bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Rounded";
+  src: url("../assets/SF-Pro-Rounded-Regular.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "SF Pro Rounded", sans-serif;
+}
+#for-wath-spend {
+  text-align: center;
+}
+.screen {
+  display: flex;
+  font-family: "SF Pro Rounded bold", serif;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(0deg, #f6f6f1 50%, #1fbdb8 100%);
+  width: 100%;
+  min-height: 100vh;
+}
+#start_screen img {
+  width: 40%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 5vh;
+}
+.start-input {
+  width: 75%;
+  margin-bottom: 1vh;
+  height: 7vh;
+  background-color: #194586;
+  color: #fff;
+  font-family: "SF Pro Rounded", sans-serif;
+  border-radius: 19px;
+  border: 1px solid rgb(162, 201, 211);
+}
+.start-input::placeholder {
+  color: #d2d2d2;
+  font-family: "SF Pro Rounded", sans-serif;
+  padding-left: 10px;
+}
+
+.button {
+  background-color: #0883b0;
+  width: 55vw;
+  height: 7vh;
+  border-radius: 37px;
+  border: 2px solid white;
+  color: white;
+  font-family: "SF Pro Rounded", sans-serif;
+  font-size: 7vw;
+  margin-top: 6vh;
+}
+.nextanim {
+  animation: next 0.3s ease-out;
+}
+.hidden {
+  display: none !important;
+}
+.newanim{
+    animation: newanim 0.3s ease-out;
+}
+
+@keyframes next {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+}
+@keyframes newanim {
+    from{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
